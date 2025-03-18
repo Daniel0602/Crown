@@ -1,0 +1,27 @@
+#school-schedule {
+  width: auto;
+}
+
+#school-schedule__week {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.widget-div {
+  padding: 20px;
+  border-radius: 50px;
+
+  background-color: hsl(245, 25%, 20%);
+  border: rgb(150, 100, 40) 2px solid;
+}
+
+.widget-div:hover {
+  border: rgb(250, 150, 60) 2px solid;
+}

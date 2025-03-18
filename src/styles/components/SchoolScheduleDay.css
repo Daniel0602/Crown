@@ -1,0 +1,28 @@
+.day-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.school-schedule__day {
+  height: auto;
+    width: 200px;
+  aspect-ratio: 3/4;
+  border-radius: 20px !important;
+  overflow-y: hidden;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+p.recess {
+  color: hsl(0, 0%, 60%);
+  margin-bottom: -20px;
+}
+
+p {
+  text-align: center;
+}
