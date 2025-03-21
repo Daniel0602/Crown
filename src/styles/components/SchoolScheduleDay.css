@@ -1,28 +1,50 @@
+.school-schedule-day {
+  width: 150px;
+  aspect-ratio: 3/4;
+
+  border-radius: 20px;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: hsl(0, 0%, 95%);
+  box-shadow: hsl(0, 0%, 0%) 0px 0px 15px;
+
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.school-schedule-day:hover {
+  box-shadow: hsla(0, 0%, 95%, 0.5) 0px 0px 10px;
+}
+
 .day-title {
   text-align: center;
   font-weight: bold;
-  font-size: 1.5em;
-  margin-bottom: 5px;
-  color: white;
+  font-size: 2em;
+
+  color: hsl(0, 0%, 15%);
 }
 
-.school-schedule__day {
-  height: auto;
-    width: 200px;
-  aspect-ratio: 3/4;
-  border-radius: 20px !important;
-  overflow-y: hidden;
+.subject {
+  font-weight: bold;
+  text-align: center;
+  font-size: large;
+  color: hsl(0, 0%, 20%);
+}
+
+.recess {
+  font-weight: bold;
+  text-align: center;
+  color: hsl(0, 0%, 40%);
+}
+
+ul {
+  width: 70%;
+  margin: 10px;
 
   display: flex;
-  justify-content: center;
   flex-direction: column;
-}
-
-p.recess {
-  color: hsl(0, 0%, 60%);
-  margin-bottom: -20px;
-}
-
-p {
-  text-align: center;
+  gap: 2px;
 }

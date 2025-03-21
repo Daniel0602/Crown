@@ -3,61 +3,24 @@ import "../styles/pages/School.css";
 import SchoolScheduleDay from "../components/SchoolScheduleDay";
 
 export default function School() {
+  const subjects: any = [
+    ["Literatura", "Ciudadanía", "Ciudadanía", "Matemáticas", "Matemáticas"],
+    ["Biología", "Biología", "Física", "Física", "Inglés"],
+    ["Química", "Literatura", "Literatura", "Filosofia", "Filosofia"],
+    ["Física", "Biología", "Quimíca", "Quimíca", "Inglés"],
+    ["Dormir", "Ambiente", "Ambiente", "Matemáticas", "Matemáticas"],
+  ];
+
   return (
     <div className="page">
       <div id="school-schedule">
         <h2 className="title">Horarios de escuela:</h2>
-        <div id="school-schedule__week">
-          <SchoolScheduleDay
-            day="Lunes"
-            subjects={[
-              "Literatura",
-              "Trabajo y ciudadanía",
-              "Trabajo y ciudadanía",
-              "Matemáticas",
-              "Matemáticas",
-            ]}
-          />
-          <SchoolScheduleDay
-            day="Martes"
-            subjects={[
-              "Biología, genética y sociedad",
-              "Biología, genética y sociedad",
-              "Física clásica y moderna",
-              "Física clásica y moderna",
-              "Inglés",
-            ]}
-          />
-          <SchoolScheduleDay
-            day="Miercoles"
-            subjects={[
-              "Química del carbono",
-              "Literatura",
-              "Literatura",
-              "Filosofia",
-              "Filosofia",
-            ]}
-          />
-          <SchoolScheduleDay
-            day="Jueves"
-            subjects={[
-              "Física clásica y moderna",
-              "Biología, genética y sociedad",
-              "Quimíca del carbono",
-              "Quimíca del carbono",
-              "Inglés",
-            ]}
-          />
-          <SchoolScheduleDay
-            day="Viernes"
-            subjects={[
-              "Dormir",
-              "Ambiente, desarrollo y sociedad",
-              "Ambiente, desarrollo y sociedad",
-              "Matemáticas",
-              "Matemáticas",
-            ]}
-          />
+        <div id="school-schedule-week">
+          <SchoolScheduleDay day="Lunes" subjects={subjects[0]} />
+          <SchoolScheduleDay day="Martes" subjects={subjects[1]} />
+          <SchoolScheduleDay day="Miercoles" subjects={subjects[2]} />
+          <SchoolScheduleDay day="Jueves" subjects={subjects[3]} />
+          <SchoolScheduleDay day="Viernes" subjects={subjects[4]} />
         </div>
       </div>
     </div>

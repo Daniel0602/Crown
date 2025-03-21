@@ -1,25 +1,21 @@
 import "../styles/components/SchoolScheduleDay.css";
 
+import Division from "./Division";
+
 export default function SchoolScheduleDay(props: any) {
   return (
-    <div className="widget-div school-schedule__day">
+    <div className="school-schedule-day">
       <p className="day-title">{props.day}</p>
-      <p>
-        12:30 {props.subjects[0]}
-        <br />
-        13:30 {props.subjects[1]}
-        <br />
-        <p className="recess">14:30 Recreo</p>
-        <br />
-        14:45 {props.subjects[2]}
-        <br />
-        <p className="recess">15:45 Recreo</p>
-        <br />
-        16:00 {props.subjects[3]}
-        <br />
-        17:00 {props.subjects[4]}
-        <br />
-      </p>
+      <Division width="120px" height="1px" color=" hsl(0,0%,0%)" />
+      <ul>
+        <li className="subject">{props.subjects[0]}</li>
+        <li className="subject">{props.subjects[1]}</li>
+        <li className="recess">Recreo</li>
+        <li className="subject">{props.subjects[2]}</li>
+        <li className="recess">Recreo</li>
+        <li className="subject">{props.subjects[3]}</li>
+        <li className="subject">{props.subjects[4]}</li>
+      </ul>
     </div>
   );
 }

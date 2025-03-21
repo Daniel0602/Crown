@@ -1,7 +1,7 @@
 export default function Home() {
-  return <div className="page">
-    <div id="warps">
-        
+  return (
+    <div>
+      <div id="warps"></div>
     </div>
-  </div>;
+  );
 }
